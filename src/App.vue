@@ -1,5 +1,6 @@
 <script>
 import TheNavigation from './components/nav/TheNavigation.vue';
+import TheFooter from './components/nav/TheFooter.vue';
 export default {
   provide() {
     return {
@@ -22,6 +23,7 @@ export default {
   },
   components: {
     TheNavigation,
+    TheFooter,
   },
 };
 </script>
@@ -31,6 +33,7 @@ export default {
   <main>
     <router-view></router-view>
   </main>
+  <the-footer></the-footer>
 </template>
 
 <style>

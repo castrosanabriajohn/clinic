@@ -21,7 +21,13 @@ export default {};
 header {
   width: 100%;
   height: 5rem;
-  background-color: #11005c;
+  border-radius: 0 0 1rem 1rem;
+  background-image: linear-gradient(
+    135deg,
+    rgb(24, 42, 115) 0%,
+    rgb(33, 138, 174) 69%,
+    rgb(32, 167, 172) 89%
+  ) !important;
 }
 
 nav {
@@ -39,23 +45,24 @@ ul {
 }
 
 li {
-  margin: 0 2rem;
+  margin: 0;
 }
 
 a {
-  text-decoration: none !important;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
   background: transparent;
   border: 1px solid transparent;
   cursor: pointer;
   color: white;
-  padding: 0.5rem 1.5rem;
-  display: inline-block;
 }
-s a:hover,
+
+a:hover,
 a:active,
 a.active {
-  color: #f1a80a;
-  border-color: #f1a80a;
-  background-color: #1a037e;
+  color: floralwhite;
+  border-color: floralwhite;
+  background-color: #4388ef;
 }
 </style>

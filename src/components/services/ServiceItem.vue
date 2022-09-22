@@ -18,15 +18,19 @@ export default {
 
 <style scoped>
 li {
-  margin: 1rem 0;
+  margin: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 12px;
   padding: 1rem;
 }
 
 li h3 {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   font-size: 1.25rem;
+}
+
+li .service-description {
+  margin: 0.5rem 0;
 }
 
 a {
@@ -34,11 +38,18 @@ a {
   color: white;
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background-color: #11005c;
+  background-image: linear-gradient(
+    135deg,
+    rgb(24, 42, 115) 0%,
+    rgb(33, 138, 174) 69%,
+    rgb(32, 167, 172) 89%
+  ) !important;
 }
 
 a:hover,
 a:active {
-  background-color: #220a8d;
+  color: floralwhite;
+  border-color: floralwhite;
+  background-color: #4388ef;
 }
 </style>
