@@ -14,7 +14,7 @@
             name="rating"
             v-model="rating"
             id="rating-poor"
-            value="poor"
+            value="malo"
           />
           <label for="rating-poor">Malo</label>
         </div>
@@ -24,7 +24,7 @@
             name="rating"
             v-model="rating"
             id="rating-good"
-            value="good"
+            value="bueno"
           />
           <label for="rating-good">Bueno</label>
         </div>
@@ -34,7 +34,7 @@
             name="rating"
             v-model="rating"
             id="rating-excellent"
-            value="excellent"
+            value="excelente"
           />
           <label for="rating-excellent">Excelente</label>
         </div>
