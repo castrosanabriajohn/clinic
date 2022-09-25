@@ -7,8 +7,14 @@
 <style scoped>
 button {
   font: inherit;
-  border: 1px solid #360032;
-  background-color: #360032;
+  border-radius: 12px;
+  border: 1px solid whitesmoke;
+  background-image: linear-gradient(
+    309deg,
+    rgb(24, 42, 115) 0%,
+    rgb(33, 138, 174) 69%,
+    rgb(32, 167, 172) 89%
+  );
   color: white;
   padding: 0.5rem 2rem;
   cursor: pointer;
