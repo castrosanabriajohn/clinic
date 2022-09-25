@@ -8,6 +8,9 @@
         <li>
           <router-link to="/professionals">Nuestro Equipo</router-link>
         </li>
+        <li>
+          <router-link to="/reviews">Reseñas</router-link>
+        </li>
       </ul>
     </nav>
   </header>
