@@ -4,6 +4,7 @@ import App from './App.vue';
 import ServicesList from './components/services/ServicesList.vue';
 import ProfessionalsList from './components/professionals/ProfessionalsList.vue';
 import TeamMembers from './components/services/TeamMembers.vue';
+import TheReviews from './pages/TheReviews.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,6 +24,7 @@ const router = createRouter({
       ],
     },
     { path: '/professionals', component: ProfessionalsList },
+    { path: '/reviews', component: TheReviews },
     { path: '/:notFound(.*)', redirect: '/services' },
   ],
 });
