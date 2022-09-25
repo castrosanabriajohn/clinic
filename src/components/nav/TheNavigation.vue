@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/services">Services</router-link>
+          <router-link to="/services">Servicios</router-link>
         </li>
         <li>
-          <router-link to="/professionals">Our Team</router-link>
+          <router-link to="/professionals">Nuestro Equipo</router-link>
         </li>
       </ul>
     </nav>

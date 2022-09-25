@@ -10,9 +10,17 @@ const router = createRouter({
   routes: [
     { path: '/', redirect: '/services' },
     {
+      name: 'services',
       path: '/services',
       component: ServicesList,
-      children: [{ path: ':serviceId', component: TeamMembers, props: true }],
+      children: [
+        {
+          name: 'team-members',
+          path: ':serviceId',
+          component: TeamMembers,
+          props: true,
+        },
+      ],
     },
     { path: '/professionals', component: ProfessionalsList },
     { path: '/:notFound(.*)', redirect: '/services' },

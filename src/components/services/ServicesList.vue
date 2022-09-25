@@ -14,6 +14,7 @@ export default {
       :key="service.id"
       :id="service.id"
       :name="service.name"
+      :description="service.description"
     >
     </service-item>
   </ul>

@@ -1,9 +1,9 @@
 <script>
 export default {
-  props: ['id', 'name'],
+  props: ['id', 'name', 'description'],
   computed: {
     link() {
-      return '/services/' + this.id;
+      return { name: 'team-members', params: { serviceId: this.id } };
     },
   },
 };
@@ -12,7 +12,8 @@ export default {
 <template>
   <li>
     <h3>{{ name }}</h3>
-    <router-link :to="link">View Members</router-link>
+    <p>{{ description }}</p>
+    <router-link :to="link">Ver Equipo</router-link>
   </li>
 </template>
 
@@ -39,7 +40,7 @@ a {
   display: inline-block;
   padding: 0.5rem 1.5rem;
   background-image: linear-gradient(
-    135deg,
+    309deg,
     rgb(24, 42, 115) 0%,
     rgb(33, 138, 174) 69%,
     rgb(32, 167, 172) 89%
